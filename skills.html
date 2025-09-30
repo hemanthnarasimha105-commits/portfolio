@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Hemanth Satti</title>
+  <link rel="icon" href="flamingtext__23405389886273033.png" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #01111e;
+      color: #e6f7ff; /* ✅ brighter for readability */
+      font-family: 'Poppins', sans-serif;
+    }
+    h2, .card-title, .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .nav-link {
+      color: #84d0ff !important;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      color: #00eaff !important; /* ✅ highlight active tab */
+    }
+    .navbar {
+      background-color: #000000cc !important;
+    }
+    .card {
+      background-color: #022b47; /* ✅ lighter navy */
+      border: 1px solid #00eaff33;
+      border-radius: 12px;
+      color: #eaf7ff; /* ✅ brighter text */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00eaff66;
+    }
+    .card-title {
+      color: #00eaff; /* ✅ neon skill title */
+    }
+    .card-text {
+      color: #e6f7ff; /* ✅ easy-to-read */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="Portfolio.html">Hemanth Satti</a>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Skills Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-5 text-info">Technical Skills</h2>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">Object-oriented programming for backend development and logic implementation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Data analysis, scripting, automation, and machine learning with Python libraries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">SQL & ORACLE</h5>
+            <p class="card-text">Writing and optimizing complex queries; data retrieval, joins, and normalization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">HTML, CSS, Bootstrap</h5>
+            <p class="card-text">Building responsive and modern UIs using HTML5, CSS3, and Bootstrap 5.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Interactive web pages and front-end logic using vanilla JS and frameworks.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+        <div class="card p-3">
+          <div class="card-body">
+            <h5 class="card-title">Git & GitHub</h5>
+            <p class="card-text">Version control, repository collaboration, and project hosting.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+  <div class="card p-3">
+    <div class="card-body">
+      <h5 class="card-title">FoodieHub (React + Redux)</h5>
+      <p class="card-text">
+        A food ordering web app built with React, Redux, and React Router. It includes category pages (Veg, Non-Veg, Drinks, Milk, Chocolate), cart management, order tracking, and account login/logout with a responsive Bootstrap navbar.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="700">
+  <div class="card p-3">
+    <div class="card-body">
+      <h5 class="card-title">Spring Boot REST APIs & Microservices</h5>
+      <p class="card-text">
+        Developed scalable backend services using Spring Boot with REST APIs and Microservices architecture. Implemented CRUD operations, service-to-service communication, and secure data handling for modular enterprise applications.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+  <div class="card p-3">
+    <div class="card-body">
+      <h5 class="card-title">Java DSA (Basics)</h5>
+      <p class="card-text">
+        Implemented core Data Structures and Algorithms in Java including arrays, linked lists, stacks, queues, trees, and sorting/searching algorithms to build problem-solving skills and optimize code efficiency.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+    </div>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

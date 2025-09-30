@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education | Hemanth Satti</title>
+  <link rel="icon" href="flamingtext__23405389886273033.png" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #01111e;
+      color: #e6f7ff; /* ✅ brighter text */
+      font-family: 'Poppins', sans-serif;
+    }
+    h2, .card-title, .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .nav-link {
+      color: #84d0ff !important;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      color: #00eaff !important; /* ✅ highlight active tab */
+    }
+    .navbar {
+      background-color: #000000cc !important;
+    }
+    .card {
+      background-color: #022b47; /* ✅ slightly lighter navy */
+      border: 1px solid #00eaff33;
+      border-radius: 12px;
+      height: 100%;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00eaff66;
+    }
+    .card-title {
+      color: #00eaff; /* ✅ neon titles */
+    }
+    .card-text {
+      color: #eaf7ff; /* ✅ readable content */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="Portfolio.html">Hemanth Satti</a>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Education Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-5 text-info">My Education</h2>
+    <div class="row g-4">
+
+      <!-- Degree -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">B.Tech in Computer Science</h5>
+          <p class="card-text">Sri Vasavi Engineering College<br>2021 - 2025<br>CGPA: 8.05/10</p>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">Intermediate (MPC)</h5>
+          <p class="card-text">Sasi Junior College<br>2019 - 2021<br>Marks: 857/1000</p>
+        </div>
+      </div>
+
+      <!-- SSC -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-3 h-100">
+          <h5 class="card-title">SSC</h5>
+          <p class="card-text"> Bhashyam E.M High School <br>2018 - 2019<br>GPA: 9.3/10</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap & AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>

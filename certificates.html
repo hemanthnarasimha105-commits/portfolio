@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificates | Hemanth Satti</title>
+  <link rel="icon" href="flamingtext__23405389886273033.png" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #01111e;
+      color: #c8e8ff;
+      font-family: 'Poppins', sans-serif;
+    }
+    h2, .card-title, .navbar-brand {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .nav-link {
+      color: #84d0ff !important;
+    }
+     .nav-link.active {
+      font-weight: bold;
+      color: #00eaff !important; /* ✅ highlight active tab */
+    }
+    .navbar {
+      background-color: #000000cc !important;
+    }
+    .skill-card {
+      background-color: #022135;
+      border: none;
+      border-radius: 15px;
+      padding: 25px 15px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+      height: 100%;
+    }
+    .skill-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px #00ffff33;
+    }
+    .skill-card img {
+      height: 70px;
+      width: 70px;
+      margin-bottom: 15px;
+      object-fit: contain;
+    }
+    .card-title {
+      color: #6fd7ff;
+      font-size: 1.2rem;
+    }
+    .cert-issuer {
+      font-size: 0.9rem;
+      color: #b0dfff;
+    }
+    .btn-cert {
+      background: #00c3ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      transition: background 0.3s ease-in-out;
+      display: inline-block;
+    }
+    .btn-cert:hover {
+      background: #0086b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bold" href="Portfolio.html">Hemanth Satti</a>
+      <button class="navbar-toggler bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link active" href="certificates.html">Certificates</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Certificates Section -->
+  <div class="container py-5">
+    <h2 class="text-center mb-5 text-info">My Certifications</h2>
+    <div class="row g-4">
+
+      <!-- Certificate 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+        <div class="skill-card">
+          <img src="java.png" alt="Java Logo" />
+          <h5 class="card-title">Java Programming</h5>
+          <p class="cert-issuer">Issued by: Sathya IT<br>Date: july 2025</p>
+          <!-- <a href="https://coursera.org/verify/java-cert" target="_blank" class="btn-cert">View Certificate</a> -->
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="skill-card">
+          <img src="python.png" alt="Python Logo" />
+          <h5 class="card-title">Python for Data Science</h5>
+          <p class="cert-issuer">Issued by: IBM<br>Date: Nov 2023</p>
+          <!-- <a href="https://ibm.com/verify/python-ds-cert" target="_blank" class="btn-cert">View Certificate</a> -->
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="skill-card">
+          <img src="webdev.png" alt="Web Dev Logo" />
+          <h5 class="card-title">Web Development Bootcamp</h5>
+          <p class="cert-issuer">Issued by: Sathya IT<br>Date: AUG 2025</p>
+          <!-- <a href="https://udemy.com/certificate/webdev123" target="_blank" class="btn-cert">View Certificate</a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap & AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
