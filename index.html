@@ -19,19 +19,21 @@
 
   <style>
     /* Change Navbar Toggler (hamburger) to blue */
-.navbar-toggler {
-  border-color: #008cff; /* Blue border */
-}
+    .navbar-toggler {
+      border-color: #008cff; /* Blue border */
+    }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,140,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,140,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
 
     body {
       background-color: #01111e;
       color: #c8e8ff;
       overflow-x: hidden;
+      padding-top: 80px; /* Prevent navbar overlap */
     }
+
     .navbar {
       background-color: rgba(0, 0, 0, 0.6);
       transition: background-color 0.4s ease-in-out;
@@ -46,6 +48,7 @@
     .nav-link:hover {
       color: #00d4ff !important;
     }
+
     .hero-img {
       width: 220px;
       height: 220px;
@@ -58,6 +61,7 @@
       transform: scale(1.1) rotate(3deg);
       box-shadow: 0 0 40px #00ffff99;
     }
+
     .hero-section {
       background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
       background-size: cover;
@@ -65,7 +69,9 @@
       display: flex;
       align-items: center;
       position: relative;
+      padding-bottom: 80px; /* ✅ extra bottom spacing */
     }
+
     .binary-bg {
       position: absolute;
       top: 0;
@@ -77,10 +83,12 @@
       z-index: -1;
       animation: moveBg 20s linear infinite;
     }
+
     @keyframes moveBg {
       from { background-position: 0 0; }
       to { background-position: 500px 500px; }
     }
+
     .social-icons a {
       color: #84d0ff;
       font-size: 24px;
@@ -92,6 +100,7 @@
       color: #00d4ff;
       transform: scale(1.2) rotate(5deg);
     }
+
     .btn-download {
       background-color: #008cff;
       color: white;
@@ -102,6 +111,7 @@
       margin-top: 25px;
       transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
       animation: pulse 2s infinite;
+      display: inline-block;
     }
     .btn-download:hover {
       background-color: #00aaff;
@@ -113,6 +123,30 @@
       70% { box-shadow: 0 0 0 15px rgba(0, 140, 255, 0); }
       100% { box-shadow: 0 0 0 0 rgba(0, 140, 255, 0); }
     }
+
+    /* ✅ Force button visible and centered on mobile */
+    @media (max-width: 768px) {
+      .hero-section {
+        padding-top: 120px !important;
+        text-align: center;
+      }
+      .btn-download {
+        display: block;
+        margin: 20px auto 0 auto; /* center horizontally */
+      }
+    }
+    /* Fix Resume Button on Mobile */
+@media (max-width: 768px) {
+  .resume-btn-wrapper {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+  .resume-btn-wrapper .btn-download {
+    display: inline-block !important;
+    width: auto;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -145,14 +179,28 @@
         <div class="col-md-8" data-aos="fade-left" data-aos-duration="1200">
           <h1 class="text-info mb-3" data-aos="fade-up" data-aos-delay="200">Hi, I'm <strong>Hemanth Satti</strong></h1>
           <p data-aos="fade-up" data-aos-delay="400">
-            Detail-oriented Computer Science (AI) graduate and aspiring Java Full Stack Developer with strong expertise in building end-to-end web applications. Proficient in frontend technologies like HTML, CSS, JavaScript, Bootstrap, and React.js, ensuring responsive and user-friendly interfaces. Skilled in backend development using Java, Spring Boot (MVC, REST API, Microservices) and Oracle ,SQL for robust database-driven solutions. debugging, optimizing performance, and integrating software modules. Passionate about continuous learning, healthcare data systems, and collaborative engineering environments, with a focus on delivering scalable and reliable full-stack applications.
+            Detail-oriented Computer Science (AI) graduate and aspiring Java Full Stack Developer with strong expertise in building end-to-end web applications. Proficient in frontend technologies like HTML, CSS, JavaScript, Bootstrap, and React.js, ensuring responsive and user-friendly interfaces. Skilled in backend development using Java, Spring Boot (MVC, REST API, Microservices) and Oracle SQL for robust database-driven solutions. Experienced in debugging, optimizing performance, and integrating software modules. Passionate about continuous learning, healthcare data systems, and collaborative engineering environments, with a focus on delivering scalable and reliable full-stack applications.
           </p>
           <div class="social-icons mt-3" data-aos="fade-up" data-aos-delay="600">
             <a href="https://www.linkedin.com/in/satti-hemanth-narasimha-appi-reddy-8aa2ba236" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/hemanthReddy-software" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:hemanthreddysatti@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:hemanthreddysatti10@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://main.d24zp1jycvljxo.amplifyapp.com/" target="_blank">
+  <i class="fas fa-external-link-alt"></i>
+</a>
+
+            
           </div>
-          <a href="Hemanth_Full StackDeveloper1.pdf" download class="btn btn-download" data-aos="zoom-in" data-aos-delay="800">Download Resume</a>
+
+          <!-- ✅ Resume Button -->
+          <div class="resume-btn-wrapper text-center text-md-start mt-3">
+  <a href="Hemanth_Full StackDeveloper.pdf" download 
+     class="btn btn-download" 
+     data-aos="zoom-in" 
+     data-aos-delay="800">
+     Download Resume
+  </a>
+</div>
         </div>
       </div>
     </div>
